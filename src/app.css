@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Josefin';
+    src: url('../resources/fonts/josefin.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+:root {
+    --base-unit: 1px;
+}
+
+html, body {
+    background: #222222 url("../resources/images/marblebg.jpg");
+    color: #CCCCCC;
+    margin : 0;
+    padding : 0;
+    font: var(--base-unit) Josefin;
+    width : 100vw;
+    height : 100vh;
+    overflow: hidden;
+    transition: background-image 0.5s;
+    user-select: none;
+}
+
+body.summer {
+    background-image: url("../resources/images/summer.jpg");
+}
+
+body.autumn {
+    background-image: url("../resources/images/autumn.jpg");
+}
+
+body.winter {
+    background-image: url("../resources/images/winter.jpg");
+}
+
+body.spring {
+    background-image: url("../resources/images/spring.jpg");
+}
+
+span.text-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-size: 1em 1em;
+}
+
+span.text-icon.autumn {
+    background-image: url("../resources/images/seasons/autumn.jpg");
+}
+
+span.text-icon.winter {
+    background-image: url("../resources/images/seasons/winter.jpg");
+}
+
+span.text-icon.spring {
+    background-image: url("../resources/images/seasons/spring.jpg");
+}
+
+span.text-icon.summer {
+    background-image: url("../resources/images/seasons/summer.jpg");
+}
