@@ -54,6 +54,7 @@ const ACTIONS = {
     
     flee() {
         Trigger("updateLocation")
+        Trigger("flee")
     },
     
     curse(data, source, target) {

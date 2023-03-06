@@ -82,7 +82,6 @@
     }
 
     function resetEncounter() {
-
         encounter.enemies.length = 0
         encounter.templates.length = 0
         initializeEncounter()
@@ -105,6 +104,7 @@
         */
         triggers.enemyDied = Trigger.on("enemyDied", updateEnemies)
         triggers.playerDied = Trigger.on("playerDied", resetEncounter)
+        triggers.flee = Trigger.on("flee", resetEncounter)
     })
 
     onDestroy(() => {

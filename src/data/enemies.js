@@ -69,7 +69,7 @@ const ENEMIES = {
     }),
     blob : (level) => ({
         name : "Blob",
-        hp : 20 * level,
+        hp : 10 * level,
         exp : level * 5,
         traits : [],
         abilities : [{
